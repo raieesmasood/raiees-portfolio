@@ -256,3 +256,124 @@ section {
 .button-container{
   gap: 1rem;
 }
+
+
+/* About */
+#about{
+position: relative;
+}
+
+.about-containers{
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.about-details-container{
+  justify-content: center;
+  flex-direction: column;
+}
+.about-containers, .about-details-container{
+  display: flex;  /* experience and studies flex */
+}
+.about-pic{
+  border-radius: 4rem;
+}
+
+.arrow{
+  position: absolute;
+  right: -3.8rem;
+  bottom: 2.5rem;
+}
+/* .about-details-container{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+border: rgb(53, 53, 53) 0.1rem solid;
+border-color: rgb(163, 163, 163);
+text-align: center;
+
+}
+ */
+
+
+/* using ideas from chat gpt */
+.details-container {;
+  padding: 1rem; /* Increased padding for better spacing */
+  flex: 1;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Subtle gradient for a modern look */
+  border-radius: 1.5rem; /* Slightly reduced border-radius for a smoother appearance */
+  border: 0.1rem solid rgb(163, 163, 163); /* Simplified border definition */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effects */
+}
+
+.details-container:hover {
+  cursor: pointer;
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Typography enhancement */
+.details-container p {
+  cursor: default;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333; /* Darker text color for better readability */
+  margin-bottom: 1rem;
+}
+
+.details-container h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222; /* Slightly darker heading color */
+}
+
+.section-container{
+  gap: 2rem;
+  height: 80%;
+}
+
+.section__pic-container{
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* experience */
+#experience{
+  position: relative;
+}
+.experience-subtitle{
+color: rgb(85, 85, 85);
+font-weight: 600;
+font-size: 1.75rem;
+margin-bottom: 2rem;
+}
+
+.experience-details-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-container{
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap ; 
+  /*content will wrap itself downt to fit width of container*/
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+}
+article{
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon{
+  cursor: default;
+}
